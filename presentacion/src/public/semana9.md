@@ -18,6 +18,25 @@ Enlaces:
 
 --
 
+
+
+https://www.datawars.io/articles/12-free-data-science-projects-to-practice-python-and-pandas
+https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/home
+https://www.projectpro.io/article/python-projects-for-data-science/462
+
+
+Limpieza de valores
+https://github.com/awantik/data-science/blob/master/data-science-ml-foundation/california_cities.csv
+https://www.kaggle.com/datasets/rhuebner/human-resources-data-set
+
+
+https://app.datawars.io/project/880b6272-4865-4aa4-82a7-368747bff46a?page=1
+
+
+Gráficos
+
+
+
 # Previo: instalar las dependencias
 
 ```bash
