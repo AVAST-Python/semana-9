@@ -2,7 +2,7 @@
 
 # Introducción a Python
 
-## Semana 7
+## Semana 9
 <!-- .element style="text-align:center" -->
 
 ![alt text](./img/logo2.png) <!-- .element style="margin-left: auto; margin-right: auto; display: block" -->
@@ -31,6 +31,40 @@ https://www.kaggle.com/datasets/rhuebner/human-resources-data-set
 
 
 https://app.datawars.io/project/880b6272-4865-4aa4-82a7-368747bff46a?page=1
+
+
+Bueno:
+https://realpython.com/python-data-cleaning-numpy-pandas/
+
+
+
+
+
+
+
+Datos nulos: eliminar, rellenar con otra cosa
+Datos erróneos
+
+
+
+https://oscarbaruffa.com/messy/
+
+
+https://www.linkedin.com/pulse/limpieza-de-datos-con-python-un-ejemplo-completo-para-luis-jos%C3%A9/?originalSubdomain=es
+
+Pasos para la limpieza de datos:
+- Identificar y eliminar valores atípicos o valores faltantes
+- Eliminar datos duplicados
+- Convertir los datos en el formato adecuado
+- Normalizar los datos
+- Verificar la consistencia de los datos
+- Verificar la validez de los datos
+
+
+¿Dónde ganan más las mujeres: en Europa o en América?
+¿Cual es el salario medio de un hombre asiático con 5 años de experiencia que trabaje en el Estados Unidos?
+
+
 
 
 Gráficos
@@ -87,23 +121,31 @@ Piensa qué columna vas a utilizar como índice. Tienes ejemplos de carga en el 
 
 ---
 
-# ¿Estás tocando el banjo?
+# Una aguja en el pajar
 #### (continuacion) <!-- .element style="text-align: center; margin-bottom: 40px" -->
 
-Crea una función que responda a la pregunta "¿Tocas el banjo?".
+Repaso:
+- ¿Os acordáis cómo definir una función y cómo llamarla?
+- ¿Cómo sabremos si la función está bien?
+- ¿Os acordáis de qué era un array?
+- ¿Cómo hacíamos para repetir algo varias veces?
 
-Si tu nombre empieza por la letra "R" o "r" minúscula, ¡estás tocando el banjo!
+-----
 
-La función toma un nombre como único argumento y devuelve una de las siguientes cadenas:
-- nombre + " toca el banjo"
-- nombre + " no toca el banjo"
+**¿Puedes encontrar la aguja en el pajar?**
 
-Los nombres dados son siempre cadenas válidas.
+Escribe una función que tome un array lleno de basura pero que contenga una "aguja"
+
+Después de que tu función encuentre la aguja debería devolver un mensaje (como una cadena) que diga:
+
+`"encontró la aguja en la posición"` más el índice que encontró la aguja.
+
+Ejemplo:
+`["heno", "chatarra", "heno", "heno", "másChatarra", "aguja", "chatarraal azar"]` --> `"encontró la aguja en la posición 5"`
 
 <div></div> <!-- .element style="height: 200px" -->
 
-[Enlace Kata](https://www.codewars.com/kata/53af2b8861023f1d88000832)
-
+[Enlace Kata](https://www.codewars.com/kata/56676e8fabd2d1ff3000000c)
 
 ---
 
@@ -119,22 +161,3 @@ Devuelve `True` si eres mejor, si no, `False`.
 <div></div> <!-- .element style="height: 200px" -->
 
 [Enlace Kata](https://www.codewars.com/kata/5601409514fc93442500010b)
-
----
-
-# Una aguja en el pajar
-
-¿Puedes encontrar la aguja en el pajar?
-
-Escribe una función que tome un array lleno de basura pero que contenga una "aguja"
-
-Después de que tu función encuentre la aguja debería devolver un mensaje (como una cadena) que diga:
-
-"encontró la aguja en la posición " más el índice que encontró la aguja.
-
-Ejemplo:
-`["heno", "chatarra", "heno", "heno", "másChatarra", "aguja", "chatarraal azar"]` --> `"encontró la aguja en la posición 5"`
-
-<div></div> <!-- .element style="height: 200px" -->
-
-[Enlace Kata](https://www.codewars.com/kata/56676e8fabd2d1ff3000000c)
