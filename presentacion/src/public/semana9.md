@@ -15,109 +15,47 @@ Aprieta la flecha de abajo si vas a hacer el proyecto Pandas
 
 Enlaces:
 - [Introducción a Pandas](https://aprendepython.es/pypi/datascience/pandas/)
+- [Fichero para procesar](./salary_survey_2021.csv.zip)
+- [Limpieza de datos en Pandas](https://realpython.com/python-data-cleaning-numpy-pandas/)
 
 --
 
+# Limpieza de datos
 
+Cuando vas a trabajar con datos, esto es lo que esperas tener:
 
-https://www.datawars.io/articles/12-free-data-science-projects-to-practice-python-and-pandas
-https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/home
-https://www.projectpro.io/article/python-projects-for-data-science/462
+![alt text](./img/good_gift.webp) <!-- .element style="margin-left: auto; margin-right: auto; display: block; width: 40%" -->
 
+Pero esto es lo que sueles tener:
 
-Limpieza de valores
-https://github.com/awantik/data-science/blob/master/data-science-ml-foundation/california_cities.csv
-https://www.kaggle.com/datasets/rhuebner/human-resources-data-set
-
-
-https://app.datawars.io/project/880b6272-4865-4aa4-82a7-368747bff46a?page=1
-
-
-Bueno:
-https://realpython.com/python-data-cleaning-numpy-pandas/
-
-
-
-
-
-
-
-Datos nulos: eliminar, rellenar con otra cosa
-Datos erróneos
-
-
-
-https://oscarbaruffa.com/messy/
-
-
-https://www.linkedin.com/pulse/limpieza-de-datos-con-python-un-ejemplo-completo-para-luis-jos%C3%A9/?originalSubdomain=es
-
-Pasos para la limpieza de datos:
-- Identificar y eliminar valores atípicos o valores faltantes
-- Eliminar datos duplicados
-- Convertir los datos en el formato adecuado
-- Normalizar los datos
-- Verificar la consistencia de los datos
-- Verificar la validez de los datos
-
-
-¿Dónde ganan más las mujeres: en Europa o en América?
-¿Cual es el salario medio de un hombre asiático con 5 años de experiencia que trabaje en el Estados Unidos?
-
-
-
-
-Gráficos
-
-
-
-# Previo: instalar las dependencias
-
-```bash
-pip install pandas
-# Si vas a usar Excel:
-pip install xlwt openpyxl xlsxwriter xlrd
-```
-<!-- .element style="font-size: 1em" -->
-
-- Debes trabajar con Python 3. Testealo con `python --version`
-- Muy recomendable usar `venv`, pero eso para otro día
-- [`pandas`](https://pandas.pydata.org/) es la librería principal para manejo de datos. Tiene "tol power".
-- El resto son librerías para acceder a ficheros Excel
+![alt text](./img/messy_gift.webp) <!-- .element style="margin-left: auto; margin-right: auto; display: block; width: 40%" -->
 
 --
 
 # Ejercicio
 
-Dado [este conjunto de datos](./Netflix_stock_price.zip), calcula lo siguiente:
-- Qué día se ha negociado mayor volumen
-- Que día de la semana tiene de media mayor volumen
-- Qué día de la semana han tenido las acciones más variación de precio (entre high y low)
-- En qué més ha habido mayor variación de precio (diferencia entre el precio de apertura del mes y el precio de cierre)
+Este es el conjunto de datos con el que te toca trabajar: [Fichero para procesar](./salary_survey_2021.csv.zip) ([vista previa](https://docs.google.com/spreadsheets/d/1IPS5dBSGtwYVbjsfbaMCYIWnOuRmJcbequohNxCyGVw/edit?resourcekey&pli=1#gid=1625408792))
 
-Primero de todo, deberás cargarlo del CSV
+Esto es lo que tienes que responder:
+- ¿Dónde ganan más las mujeres: en Europa o en América?
+- ¿Cual es el salario medio de un hombre asiático con 5 años de experiencia que trabaje en el Estados Unidos?
 
-No vale usar Excel para calcularlo, pero sí para comprobarlo.
+Tendrás que limpiar los datos primero:
+- Examina los datos, puedes usar una hoja de cálculo
+- Revisa valores "raros" y cosas incoherentes
+- Decide qué tienes que modificar
+- Realiza las modificaciones usando pandas
+- Bienvenido al Mundo Real<sup>©</sup>
 
+En la siguiente página tienes algunos enlaces con información y ejemplos.
 
 --
 
-# Pistas
+# Ejemplos e información
 
-- <details>
-<summary>Ojo al cargar los datos</summary>
-Piensa qué columna vas a utilizar como índice. Tienes ejemplos de carga en el documento.
-</details>
-- <details>
-<summary>Día de la semana</summary>
-<ul>
-<li>Puedes transformar el índice a datetime:<br>
-<code>df.index = pd.to_datetime(df.index)</code>
-<li>Puedes obtener el día de la semana con <code>df.index.weekday</code> y guardarlo en otra columna.
-¿Qué valores está guardando?
-<li>Se pueden agrupar datos con <code>groupby</code>
-</ul>
-</details>
+- https://realpython.com/python-data-cleaning-numpy-pandas/
+- https://www.linkedin.com/pulse/limpieza-de-datos-con-python-un-ejemplo-completo-para-luis-jos%C3%A9
+- Proyectos de práctica: https://www.datawars.io/articles/12-free-data-science-projects-to-practice-python-and-pandas
 
 ---
 
@@ -146,6 +84,19 @@ Ejemplo:
 <div></div> <!-- .element style="height: 200px" -->
 
 [Enlace Kata](https://www.codewars.com/kata/56676e8fabd2d1ff3000000c)
+
+
+---
+
+# Ordenamiento pseudoalfabético
+
+> He preparado un programa que ordena los números del 1 al 100 en orden alfabético
+> es decir: primero los que empiezan por 1, luego por 2, etc. Los que empiezan
+> por el mismo dígito los reordena por el dígito que viene a continuación. Así,
+> los números quedarían: 1, 10, 100, 11, 12...
+
+¿En qué números coincide el orden numérico con el alfabético?
+
 
 ---
 
